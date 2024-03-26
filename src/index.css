@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.colorPickerButton {
+  display: flex;
+  position: relative;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+}
+
+.eyedropperIcon {
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding:5px;
+  background-color: #282c34;
+}
+
+.canvas {
+  border: "1px solid #000",
+}
+
+
+.tooltipText {
+  height: auto;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: auto;
+  background-color: beige;
+}
+
+.container {
+  position: "relative" 
+}
+
