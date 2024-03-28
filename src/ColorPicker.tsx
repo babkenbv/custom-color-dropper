@@ -76,7 +76,7 @@ const ColorDropper: React.FC = () => {
           onMouseMove={handleMouseMove}
           onClick={handleClick}
           style={{
-            cursor: isDropperActive ? "none" : "default",
+            cursor: isDropperActive ? "crosshair" : "default",
           }}
         />
         {isDropperActive && (
@@ -98,14 +98,15 @@ const ColorDropper: React.FC = () => {
                 cx={circleSize / 2}
                 cy={circleSize / 2}
                 r={circleSize / 2 - strokeWidth / 2}
-                fill="none"
+                fill="white"
                 stroke={currentColor}
                 strokeWidth={strokeWidth}
+                opacity="0.5"
               />
               <text
                 className="tooltipText"
                 x="50%"
-                y="50%"
+                y="70%"
                 fill="black"
                 fontSize="11"
                 fontFamily="Arial"
